@@ -20,6 +20,8 @@ The initial UCI HAR Dataset contained a TEST set of subjects and observations;  
 
 * test/subject_test.txt': Identifier of each subject for which the observations belong.
 
+An additional features_info.txt file is contained in this dataset which includes a detailed description of each of the variables.
+
 From the 561 variables in the unified dataset, only those variables which represent a measurement of the mean or standard devation for each measurement were extracted with the other variables being ignored.  The number of columns representing the mean was 46 and the number of columns representing the standard deviation was 33, leaving a total number of 79.  
 
 Two additional variables were included in the dataset, one for the subject and another for the activity that was performed. This created a dataset of 10299 observations of 81 variables.
@@ -53,15 +55,15 @@ The variables from the original study have been enhanced and enriched for readab
 * 'std' has been replaced with 'StdDeviation'
 * 'AverageOf' has been prefixed to the variable name
 
-For example, the original variable "tBodyAcc-mean()-X" from the UCI HAR Dataset has been averaged for each activity and subject and the variable has been renamed as "AverageOfTimeBodyAccelerationMeanX".  So, columns 3, 4 and 5 will contain the following variable names:
+For example, the original variable `tBodyAcc-mean()-X` from the UCI HAR Dataset has been averaged for each activity and subject and the variable has been renamed as `AverageOfTimeBodyAccelerationMeanX`.  So, columns 3, 4 and 5 will contain the following variable names:
 
-AverageOfTimeBodyAccelerationMeanX	
+`AverageOfTimeBodyAccelerationMeanX`	
 This represents the average of TimeBodyAccelerationMean of direction X, for both test and training data sets, for each activity, for each subject.
 
-AverageOfTimeBodyAccelerationMeanY	
+`AverageOfTimeBodyAccelerationMeanY`
 This represents the average of TimeBodyAccelerationMean of direction Y, for both test and training data sets, for each activity, for each subject.
 
-AverageOfTimeBodyAccelerationMeanZ	
+`AverageOfTimeBodyAccelerationMeanZ`	
 This represents the average of TimeBodyAccelerationMean of direction Z, for both test and training data sets, for each activity, for each subject	
 
 This pattern continues up to and including variable 81.
