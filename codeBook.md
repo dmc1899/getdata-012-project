@@ -6,21 +6,21 @@ The output dataset that has been produced includes 180 observations of 81 variab
 
 The initial UCI HAR Dataset contained a TEST set of subjects and observations;  a TRAIN set of subjects and observations; a list of activities and a set of features. This information was combined to prepare a unified dataset, which included 561 variables recorded for each of the subjects.  The files which represent this information were as follows:
 
-*features.txt': List of all variables measured.
+* features.txt': List of all variables measured.
 
-*activity_labels.txt': Lookup data to map identifier and description of the activity performed.
+* activity_labels.txt': Lookup data to map identifier and description of the activity performed.
 
-*train/X_train.txt': Training set of observations.
+* train/X_train.txt': Training set of observations.
 
-*train/y_train.txt': Training labels.
+* train/y_train.txt': Training labels.
 
-*train/subject_train.txt': Identifier of each subject for which the observations belong.
+* train/subject_train.txt': Identifier of each subject for which the observations belong.
 
-*test/X_test.txt': Test set of observations.
+* test/X_test.txt': Test set of observations.
 
-*test/y_test.txt': Test labels.
+* test/y_test.txt': Test labels.
 
-*test/subject_test.txt': Identifier of each subject for which the observations belong.
+* test/subject_test.txt': Identifier of each subject for which the observations belong.
 
 From the 561 variables in the unified dataset, only those variables which represent a measurement of the mean or standard devation for each measurement were extracted with the other variables being ignored.  The number of columns representing the mean was 46 and the number of columns representing the standard deviation was 33, leaving a total number of 79.  
 
