@@ -17,6 +17,13 @@ The main driver function in the run_analysis.R script is `run_analysis`.  To exe
 ```
 source("./run_analysis.R")
 output_df <- run_analysis()
+```
+To view the output within R Studio, the command to issue is:
+```
 View(output_df)
+```
+To write the output to a CSV file for viewing in a third-party application, such as Excel, the command to issue is:
+```
+write.table(output_df,file="output_df.csv", row.names=FALSE, sep=",")
 ```
 
