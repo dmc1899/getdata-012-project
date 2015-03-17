@@ -1,33 +1,35 @@
-Study Design
+#Study Design
 
-This dataset has been derived using the UCI HAR Dataset (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) as input.  The final dataset that has been produced includes 180 observations of 81 variables.
+The input dataset for this analysis project is the UCI HAR Dataset available from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.  
 
-The initial UCI HAR Dataset contained: a TEST set of subjects and observations;  a TRAIN set of subjects and observations; a list of activities and features.This information was combined to prepare a unified dataset, which included 561 variables recorded for each of the subjects.  The files which represent this information were as follows:
+The output dataset that has been produced includes 180 observations of 81 variables.
 
-'features.txt': List of all variables measured.
+The initial UCI HAR Dataset contained a TEST set of subjects and observations;  a TRAIN set of subjects and observations; a list of activities and a set of features. This information was combined to prepare a unified dataset, which included 561 variables recorded for each of the subjects.  The files which represent this information were as follows:
 
-'activity_labels.txt': Lookup data to map identifier and description of the activity performed.
+*features.txt': List of all variables measured.
 
-'train/X_train.txt': Training set of observations.
+*activity_labels.txt': Lookup data to map identifier and description of the activity performed.
 
-'train/y_train.txt': Training labels.
+*train/X_train.txt': Training set of observations.
 
-'train/subject_train.txt': Identifier of each subject for which the observations belong.
+*train/y_train.txt': Training labels.
 
-'test/X_test.txt': Test set of observations.
+*train/subject_train.txt': Identifier of each subject for which the observations belong.
 
-'test/y_test.txt': Test labels.
+*test/X_test.txt': Test set of observations.
 
-'test/subject_test.txt': Identifier of each subject for which the observations belong.
+*test/y_test.txt': Test labels.
 
+*test/subject_test.txt': Identifier of each subject for which the observations belong.
 
+From the 561 variables in the unified dataset, only those variables which represent a measurement of the mean or standard devation for each measurement were extracted with the other variables being ignored.  The number of columns representing the mean was 46 and the number of columns representing the standard deviation was 33, leaving a total number of 79.  
 
-From the 561 variables in the unified dataset, only those variables which represent a measurement of the mean or standard devation for each measurement were extracted with the other variables being ignored.  The number of columns representing the mean was 46 and the number of columns representing the standard deviation was 33, leaving a total number of 79 variables in the dataset.  Two additional variables were included in the dataset, one for the subject and another for the activity that was performed.  This created a dataset of 10299 observations of 81 variables.
+Two additional variables were included in the dataset, one for the subject and another for the activity that was performed. This created a dataset of 10299 observations of 81 variables.
 
 This dataset was then grouped by the activity being performed and the subject performing the activity and the average of each of the mean and standard deviation variables for that subject's activity were calculated.
 
 
-Code Book
+#Code Book
 
 The final dataset includes variables from three different categories - Measurement Variables, Subject Identifier Variable and Activity Identifier Variable.
 
