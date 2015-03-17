@@ -34,10 +34,10 @@ The final output dataset that has been produced includes 180 observations of 81 
 
 The final output dataset includes variables from three different categories - Measurement Variables, Subject Identifier Variable and Activity Identifier Variable.
 
-**Variable 1 - activity_name**
+**Variable 1 - `activity_name`**
 This is the Activity Identifier variable that provides a text value that represents the name of the activity performed by the subject.
 
-**Variable 2 - subject**
+**Variable 2 - `subject`**
 This is the Subject Identifier variable that provides a numeric value that represents the identifier of the subject that performed the activity
 
 **Variables 3:81**
