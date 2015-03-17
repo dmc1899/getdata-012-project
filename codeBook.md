@@ -46,14 +46,14 @@ These variables are Measurement Variables that provides numeric values that repr
 The variables from the original study have been enhanced and enriched for readability.  Namely, the following transformations have been performed:
 
 * Special characters such as '()/-_' have been removed
-* 't' has been replaced with 'Time'
-* 'f' has been replaced with 'Frequency'
-* 'Mag' has been replaced with 'Magnitude'
-* 'GyroJerk' has been replaced with 'AngularAcceleration'
-* 'Gyro' has been replaced with 'AngularSpeed'
-* 'mean' has been replaced with 'Mean'
-* 'std' has been replaced with 'StdDeviation'
-* 'AverageOf' has been prefixed to the variable name
+* `t` has been replaced with `Time`
+* `f` has been replaced with `Frequency`
+* `Mag` has been replaced with `Magnitude`
+* `GyroJerk` has been replaced with `AngularAcceleration`
+* `Gyro` has been replaced with `AngularSpeed`
+* `mean` has been replaced with `Mean`
+* `std` has been replaced with `StdDeviation`
+* `AverageOf` has been prefixed to the variable name
 
 For example, the original variable `tBodyAcc-mean()-X` from the UCI HAR Dataset has been averaged for each activity and subject and the variable has been renamed as `AverageOfTimeBodyAccelerationMeanX`.  So, columns 3, 4 and 5 will contain the following variable names:
 
