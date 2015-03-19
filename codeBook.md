@@ -24,6 +24,15 @@ An additional features_info.txt file is contained in this dataset which includes
 
 From the 561 variables in the unified dataset, only those variables which represent a measurement of the mean or standard devation for each measurement were extracted with the other variables being ignored.  The number of columns representing the mean was 46 and the number of columns representing the standard deviation was 33, leaving a total number of 79.  
 
+The columns in the original dataset which represented the mean were identifed by matching `mean()` and ignoring all other variations, meaning the following variables, which although contained the term `Mean` were excluded:
+* angle(tBodyAccMean,gravity)
+* angle(tBodyAccJerkMean),gravityMean)
+* angle(tBodyGyroMean,gravityMean)
+* angle(tBodyGyroJerkMean,gravityMean)
+* angle(X,gravityMean)
+* angle(Y,gravityMean)
+* angle(Z,gravityMean)
+
 Two additional variables were included in the dataset, one for the subject and another for the activity that was performed. This created a dataset of 10299 observations of 81 variables.
 
 This dataset was then grouped by the activity being performed and the subject performing the activity and the average of each of the mean and standard deviation variables for that subject's activity were calculated.
